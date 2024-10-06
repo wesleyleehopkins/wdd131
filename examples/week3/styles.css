@@ -1,0 +1,131 @@
+/* General Styling
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+header {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.menu-container {
+    position: relative;
+}
+
+.hamburger {
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.line {
+    width: 100%;
+    height: 4px;
+    background-color: #333;
+    transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.menu {
+    position: absolute;
+    top: 50px;
+    left: -300px;
+    background-color: #fff;
+    width: 300px;
+    height: 100vh;
+    transition: left 0.4s ease;
+    box-shadow: 3px 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.menu ul {
+    list-style: none;
+    padding: 20px;
+}
+
+.menu ul li {
+    margin: 20px 0;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.2rem;
+}
+
+.menu.open {
+    left: 0;
+}
+
+.line.open:nth-child(1) {
+    transform: rotate(45deg) translateY(8px);
+}
+
+.line.open:nth-child(2) {
+    opacity: 0;
+}
+
+.line.open:nth-child(3) {
+    transform: rotate(-45deg) translateY(-8px);
+}
+
+.container {
+    text-align: center;
+}
+
+.title {
+    font-size: 3rem;
+    color: white;
+    transition: color 0.5s ease, transform 0.6s ease;
+}
+
+button {
+    margin-top: 20px;
+    padding: 15px 25px;
+    background-color: white;
+    color: #ff6a95;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: background-color 0.4s, transform 0.4s ease;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+button:hover {
+    background-color: #ff6a95;
+    color: white;
+    transform: scale(1.1);
+}
+
+#box {
+    margin-top: 30px;
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    border-radius: 20px;
+    transition: transform 0.8s ease, background-color 0.6s, box-shadow 0.6s;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+#box:hover {
+    transform: rotate(360deg) scale(1.2);
+    background-color: #ff6a95;
+    box-shadow: 0 20px 25px rgba(0, 0, 0, 0.3);
+} */

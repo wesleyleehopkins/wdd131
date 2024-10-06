@@ -1,0 +1,97 @@
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mooli&display=swap');
+
+/* Root variables for easy customization */
+:root {
+    --primary-color: #52489c;
+    --secondary-color: #59c3c3;
+    --accent-color: #f45b69;
+    --text-dark: #333;
+    --text-light: #87a8f3;
+    --nav-hover-link-color: #ea3333;
+    --nav-hover-background-color: #f4f4f4;
+    --accent1-color: #f4f4f4;
+    --accent2-color: #ea3333;
+    --ham-color: #f4f4f4;
+    --primary-font:"Bangers", serif, san-serif;
+    --secondary-font:"Mooli", serif, san-serif;
+}
+
+body {
+    font-family: var(--primary-font);
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    
+
+}
+header {
+    padding: 1rem;
+    text-align: center;
+    background-color: var(--primary-color );
+    flex-wrap: wrap;
+
+
+    
+}
+.menu {
+    background-color: #52489c;
+
+
+}
+.navigation {
+    background-color: var(--primary-color);
+    color: var(--ham-color);
+    list-style-type: none;
+    display:none;
+}
+
+img {
+	max-width: 100%;
+}
+
+
+footer{
+    background-color: var(--primary-color);
+    text-align: center;
+}
+
+
+
+
+
+
+@media only screen and (min-width: 600px) {
+    /* Adjust gallery to single column on small screens */
+    .gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        
+    }
+    
+    
+    .menu{ 
+        visibility: hidden;
+    }
+    
+
+
+}
+
+@media screen and (min-width: 1000px) {
+    .gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-self: auto;
+
+    }
+    .menu{ 
+        visibility: hidden;
+    }
+    .navigation{
+        display: flex;
+    }   
+    }
+ 
+    
