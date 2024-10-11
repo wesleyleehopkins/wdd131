@@ -48,7 +48,9 @@ function viewHandler(event) {
     closeButton.addEventListener('click', closeViewer);
 }
 
-// Function to close the viewer when the close button is clicked
+
+
+// Function to close the viewer when the close button is clicked. this is to ensure update
 function closeViewer() {
     console.log('Close button clicked');
     const viewer = document.querySelector('.viewer');
