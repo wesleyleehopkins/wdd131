@@ -14,69 +14,94 @@
     --accent1-color: #f4f4f4;
     --accent2-color: #ea3333;
     --ham-color: #f4f4f4;
-    --primary-font:"Bangers", serif, san-serif;
-    --secondary-font:"Mooli", serif, san-serif;
+    --primary-font: "Bangers", serif, san-serif;
+    --secondary-font: "Mooli", serif, san-serif;
 }
+
 
 body {
     font-family: var(--primary-font);
     max-width: 1200px;
     margin: 0 auto;
     text-align: center;
-    
-
 }
+
 header {
     padding: 1rem;
     text-align: center;
-    background-color: var(--primary-color );
-    flex-wrap: wrap;
-
-
-    
+    background-color: var(--primary-color);
+    flex-wrap: 100%;
 }
+
+a {
+    color: white;
+}
+
 .menu {
     background-color: #52489c;
-
-
 }
+
 .navigation {
     background-color: var(--primary-color);
-    color: var(--ham-color);
+    color: white;
     list-style-type: none;
-    display:none;
+    display: none;
 }
 
 img {
-	max-width: 100%;
+    max-width: 100%;
 }
 
+.viewer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 1fr 3fr 1fr;
+}
 
-footer{
+.close-viewer {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.75);
+    height: 20px;
+    width: 20px;
+    color: white;
+}
+
+.display_photo {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    max-height: 100%;
+}
+
+footer {
     background-color: var(--primary-color);
     text-align: center;
 }
-
-
-
-
-
 
 @media only screen and (min-width: 600px) {
     /* Adjust gallery to single column on small screens */
     .gallery {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        
     }
-    
-    
-    .menu{ 
-        visibility: hidden;
+
+    #menu {
+        display: none;
     }
-    
 
-
+    .navigation {
+        background-color: var(--primary-color);
+        color: white;
+        list-style-type: none;
+        display: block;
+    }
 }
 
 @media screen and (min-width: 1000px) {
@@ -84,14 +109,23 @@ footer{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         justify-self: auto;
+    }
 
+    #menu {
+        display: none;
     }
-    .menu{ 
-        visibility: hidden;
-    }
-    .navigation{
+
+    .navigation {
+        background-color: var(--primary-color);
+        color: white;
+        list-style-type: none;
         display: flex;
-    }   
+        flex-direction: row;
+        justify-content: space-around;
     }
- 
-    
+}
+
+.close-viewer {
+    height: 50px;
+    width: 50px;
+}
