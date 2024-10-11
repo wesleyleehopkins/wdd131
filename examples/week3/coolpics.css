@@ -103,6 +103,12 @@ footer {
         list-style-type: none;
         display: block;
     }
+
+    .display_photo {
+        grid-column: 2/3;
+        grid-row: 2/3;
+        max-height: 100%;
+    }
 }
 
 @media screen and (min-width: 1000px) {
@@ -124,9 +130,15 @@ footer {
         flex-direction: row;
         justify-content: space-around;
     }
-}
+    .display_photo {
+        grid-column: 2/3;
+        grid-row: 2/3;
+        max-height: 100%;
+    }
 
-.close-viewer {
-    height: 50px;
-    width: 50px;
+
+    .close-viewer {
+        height: 50px;
+        width: 50px;
+}
 }
