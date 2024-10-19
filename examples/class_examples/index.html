@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <ul>
+        <li>
+        </li>
+        <li>
+        </li>
+        <li>
+        </li>
+        <li>
+        </li>
+        <li>
+        </li>
+    </ul> 
+     <ul>
+        <li>
+        </li>
+        <li>
+        </li>
+        <li>
+        </li>
+        <li>
+        </li>
+        <li>
+        </li>
+    </ul>
+    <script>
+        //variables
+        const a = 1
+        let b=2
+        var c=3
+
+        const obj = {
+            A: 1,
+            B: 2,
+            C: 3,
+            
+        }
+
+        function sum(a,b) {
+            return a+b
+        }
+        console.log(obj.a)
+
+        const sum2 = (a,b) => a+b
+
+        getName = () => {
+            return 'Wesley'
+        }
+        console.log(getName())
+
+
+
+        for (let i = 0; i < 10 ; i++) {
+            console.log('I am in for a loop'+ i)
+            
+        }
+
+        const listItems = document.querySelectorAll('ul li');
+        listItems.forEach((ele) => {
+            console.log(ele)
+        })
+
+    </script>
+</body>
+</html>

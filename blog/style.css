@@ -1,0 +1,72 @@
+/* Root variables for easy customization */
+:root {
+    --primary-color: #f2e8cf;
+    --title-color: #e2073e;
+    --text-dark: #333;
+    --text-light: #497aec;
+    --primary-font: "Arial", serif, sans-serif;
+    --secondary-font: "Georgia", serif, sans-serif;
+}
+
+body {
+    font-family: var(--primary-font);
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+header {
+    padding: 1rem;
+    text-align: center;
+    background-color: var(--primary-color);
+    flex-wrap: wrap;
+}
+
+.navigation {
+    background-color: white;
+    list-style-type: none;
+    display: flex;
+    justify-content: right;
+    padding: 20px;
+    margin: 10px;
+    justify-content: space-around;
+}
+
+.page_content {
+    display: grid;  /* Enable grid layout */
+    grid-template-columns: 1fr 1fr 1fr;  /* Three equal columns */
+    gap: 20px;  /* Space between columns */
+    padding: 1rem;
+    background-color: var(--primary-color);
+}
+
+.book_info {
+    display: flex;  /* Use flexbox for book info */
+    align-items: center;
+    /* use entire column and row per object */
+    grid-column: span 2;
+      /* Align items vertically centered */
+}
+
+.description {
+    flex: 1;  /* Allow description to take available space */
+    text-align: left;  /* Align text to the left */
+    margin-right: 20px;  /* Add space to the right of the description */
+}
+
+img {
+    max-width: 150px;  /* Set a maximum width for the images */
+    height: auto;  /* Maintain aspect ratio */
+}
+
+.side_options {
+    background-color: #ffffff;  /* Optional: set a background color for the sidebar */
+    padding: 1rem;
+    border-radius: 8px;  /* Optional: round the corners */
+    align-self: start;  /* Align the sidebar to the top of the grid cell */
+}
+
+footer {
+    padding: 1rem;
+    background-color: var(--primary-color);
+}
