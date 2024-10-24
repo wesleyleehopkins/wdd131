@@ -29,28 +29,36 @@ header {
     justify-content: right;
     padding: 20px;
     margin: 10px;
+    padding-left: 80%;
     justify-content: space-around;
 }
 
 .page_content {
     display: grid;  /* Enable grid layout */
-    grid-template-columns: 1fr 1fr 1fr;  /* Three equal columns */
+    grid-template-columns: 1fr 3fr 1fr;  /* 2 columns 3/4 */
+    /* grid-template-rows: 1fr 1fr;  */
     gap: 20px;  /* Space between columns */
     padding: 1rem;
     background-color: var(--primary-color);
+    /* text-align: center; */
+    justify-content:center;
+    
 }
 
 .book_info {
     display: flex;  /* Use flexbox for book info */
     align-items: center;
     /* use entire column and row per object */
+    display: grid;
     grid-column: span 2;
       /* Align items vertically centered */
+      grid-template-columns: 1fr 2fr;
+      
 }
 
 .description {
-    flex: 1;  /* Allow description to take available space */
-    text-align: left;  /* Align text to the left */
+   /* flex: 1;*/  /* Allow description to take available space */
+    text-align: center;  /* Align text to the left */
     margin-right: 20px;  /* Add space to the right of the description */
 }
 
@@ -63,9 +71,16 @@ img {
     background-color: #ffffff;  /* Optional: set a background color for the sidebar */
     padding: 1rem;
     border-radius: 8px;  /* Optional: round the corners */
-    align-self: start;  /* Align the sidebar to the top of the grid cell */
+    /* align-self: start;  Align the sidebar to the top of the grid cell */
+    border-left:3px solid #333;
+    display: block;
+    grid-column: 3/4;
+    grid-row: 1/4;
 }
-
+label {
+    display: block;
+    margin-top: 50px;
+}
 footer {
     padding: 1rem;
     background-color: var(--primary-color);

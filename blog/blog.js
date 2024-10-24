@@ -23,5 +23,45 @@ const articles = [
 		ages: '12-16',
 		genre: 'Fantasy',
 		stars: '⭐⭐⭐⭐'
-	}
+	},
+	{
+		id: 3,
+		title: "Belgariad Book One: Pawn of Prophecy",
+		date: "Feb 12, 2022",
+		description:
+			'A fierce dispute among the Gods and the theft of a powerful Orb leaves the World divided into five kingdoms. Young Garion, with his "Aunt Pol" and an elderly man calling himself Wolf --a father and daughter granted near-immortality by one of the Gods -- set out on a complex mission.',
+		imgSrc:
+		"https://images-na.ssl-images-amazon.com/images/I/41ZxXA+nInL.jpg",
+		imgAlt: "Book cover for Pawn of Prophecy",
+		ages: "12-16",
+		genre: "Fantasy",
+		stars: "⭐⭐⭐⭐⭐"
+		}
 ]
+
+const page_content = document.querySelector('.page_content')
+articles.forEach( article => {
+	const section = document.createElement('div')
+	section.classList.add('book_info')
+	const template = `  
+            <div>
+				<h3>Date</h3>
+                <p>${article.date}</p>
+                <h3>Ages</3>
+                <p>${article.ages}</p>
+                <h3>Genre</h3>
+                <p>${article.genre}</p>
+                <h3>Stars</h3>
+                <p>${article.stars}</p>
+                </div>
+            <div class="description">
+                <h2>${article.title}</h2>
+                <img id="book_one_img" src='${article.imgSrc}' alt="${article.imgAlt}">
+                <h3>Description</h3>
+                <p>${article.description}</p>
+                
+            </div>`
+section.innerHTML=template 
+
+page_content.appendChild(section)
+})
