@@ -5,7 +5,7 @@
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    
+}
 #front {
     grid-column: 2/3;
     grid-row: 1/3;
@@ -30,6 +30,7 @@ p , img {
 }
 img { 
     float: right;
+    height:50px;
 }
 #card_number {
     width: 100%;
@@ -43,12 +44,11 @@ img {
 #date {
     float: right;
 }
-}
+
 #back {
     grid-column: 2/3;
     grid-row: 1/3;
     gap: 10px;
-    margin: 20px;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -71,11 +71,12 @@ img {
 
 }
 #card-stripe {
+
     width: 25%;
     height: 55px;
     background-color: #3d5266;
     position: absolute;
-    right: 1218px;
+
     z-index: 49;
   }
 #submit {
