@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Patrick+Hand&display=swap');
+
+
+header, .recipe_name {
+    font-family: "Patrick Hand", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+
+}
+
+
+#hero_box {
+    border: solid 1px black;
+    display:flex;  
+    margin: 15px;
+    padding: 15px;
+    border-radius: 8px;
+    flex-direction: row;
+}
+
+#logo {
+    width: 3em;
+    height: 3em;
+}
+form {
+    display:flex;
+    padding: 15px;
+
+    padding-bottom: 15px;
+    border-bottom: solid 2px rgb(184, 181, 181);
+    margin-bottom: 15px;
+    
+}
+#search_recipebook  img{
+    width: 25px;
+    height: 25px;
+}
+form #search_log {
+    border-bottom-left-radius: 8px;
+    border-top-left-radius: 8px;
+    border-right: none;
+}
+
+#hero_information{
+    padding: 10px;
+}
+form #search_recipebook {
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 8px;
+}
+.empty_star{
+    font-size: 22px;
+}
+.rating {
+    display:flex;
+    align-items: center;
+    margin-top: 0;
+}
+
+.main_image {
+    width: 24em;
+}
+
+#recipe_title{
+    border: solid 1px black;
+    display:inline-block;   
+    padding: 5px;
+    color: #0d73b3;
+
+}
+#search_log {
+     flex: 1;
+    }
+.recipe_name {
+    color: #0d73b3;
+    margin-bottom: 0;
+
+}
+
+
+
+
+
+
+
+footer {
+    display: flex;
+    width: 100%;
+    flex-direction: row-reverse;
+    align-items: baseline;
+    justify-content: flex-end;
+}
+.contributer{
+    font-size: .8em;
+    color: #0d73b3;
+    width: 100%;
+
+
+}
+.social {
+    display: flex;
+    justify-content: flex-end;
+    gap: 5px;  /* Adds space between social icons */
+    width: 100%;  /* Takes full width of the container */
+    margin-top: 10px;  /* Adds space between footer text and social icons */
+    flex-shrink: 1;
+    margin-right: 15px;
+}
+
+.social img {
+    width: 50px;  /* Controls the size of the social icons */
+    height: auto;
+
+}
+  
+
+
+    @media (max-width:559px){
+    
+       
+        #hero_box{
+            flex-direction: column;
+        }
+        .main_image {
+            width: 100%;
+        }
+        #hero_information{
+            padding: 0;
+        }
+        .more_information{
+            display: none;
+        }
+        footer{
+            flex-flow: row wrap;
+            text-align: center;
+        }
+        .social{
+            flex-grow: 1;
+            justify-content: center;
+        }
+
+    }
+
+    
+   

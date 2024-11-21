@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: aquamarine;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+
+        }
+        #login {
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            width: 400px;
+            padding: 30px;
+        }
+        input {
+            font-size: 18px;
+            padding: 8px 12px;
+
+        }
+        button { 
+            background-color: black;
+            color: white;
+        }
+        h1 {
+            text-align: center;
+
+        }
+        .message {
+            color: red;
+        }
+
+    </style>
+</head>
+<body>
+    <form id="login">
+        <h1> Login</h1>
+        <span class="message">&nbsp;</span>
+        <input type="text" placeholder="Email" id="username">
+        <input type="text" placeholder="Password" id="password">
+        <button type="submit">Login</button>
+    </form>
+
+    <script>
+        const form = document.getElementById('login');
+        const userName = document.getElementById('username');
+        const userPassword = document.getElementById('password');
+        const messageContainer = document.querySelector('.message');
+
+        function onSubmit(event) {
+            event.preventDefault();
+
+            if (!userName.value || !userPassword.value) {
+                messageContainer.innerHTML = ' You did not fill out the form';
+            }
+            console.log(userName)
+            console.log(userPassword)
+
+        }
+        form.addEventListener('submit',onSubmit);
+    </script>
+</body>
+</html>
