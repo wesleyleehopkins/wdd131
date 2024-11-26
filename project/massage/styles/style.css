@@ -1,0 +1,321 @@
+
+/* if you are using any Google fonts change the font names below to your fonts. 
+Any spaces in your font name should be replaced with a +. 
+Fonts are separated by a | */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&family=Lato:wght@300;400;700&display=swap');
+
+:root {
+  /* Colors */
+  --primary-background: #a3c6d6;  /* Soft Blue */
+  --secondary-background: #f5f5f5;  /* Light Gray */
+  --accent1: #1c3d5a;  /* Deep Navy */
+  --accent2: #cae8fa;  /* Sky Blue */
+  /* Text Colors */
+  --headline-color-on-white: #1c3d5a;  /* headlines on a white background */ 
+  --headline-color-on-color: #ffffff; /* headlines on a colored background */ 
+  --paragraph-color-on-white: #708090; /* paragraph text on a white background */ 
+  --paragraph-color-on-color: white; /* paragraph text on a colored background */ 
+
+  /* Background Colors */
+  --paragraph-background-color: #a3c6d6;
+
+  /* Fonts */
+  --heading-font: 'Dancing Script', serif, sans-serif;
+  --paragraph-font: Lato, serif, sans-serif;
+
+  /* Navigation Colors */
+  --nav-link-color: #ffffff;
+  --nav-background-color: #1c3d5a;
+  --nav-hover-link-color: #cae8fa;
+  --nav-hover-background-color: #708090;
+}
+
+body {
+    margin: 0 auto;
+    font-family: var(--paragraph-font);
+    color: var(--headline-color-on-white);
+    max-width: 900px;
+    text-align: center;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+header {
+    border-bottom: 1px solid black;
+    background-color: var(--primary-background);
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-items: center;
+    padding: 0.5rem;
+
+}
+nav {
+	background-color: var(--primary-background);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+    grid-column: 2;
+    grid-row: 1/3;
+}
+#logo_link {
+    height: 33%;
+    width: 33%;
+}
+.navigation li a:hover,
+.navigation li button:hover,
+#active:hover,
+.modified p a:hover {
+	color: var(--nav-hover-link-color);
+	background-color: var(--nav-hover-background-color);
+	font-weight: 700;
+	border-radius: 5px;
+}
+
+#active {
+	color: var(--accent2-color);
+	box-shadow: 5px 5px 10px black;
+	border-radius: 5px;
+	background-color: var(--accent1-color);
+}
+
+#menu {
+	font-size: 1.5rem;
+	border: 1px solid rgba(0, 0, 0, 0.3);
+	padding: 3px 7px 6px;
+	background-color: var(--ham-color);
+	color: #000;
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "X";
+}
+
+.navigation {
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+	background-color: var(--secondary-color);
+}
+.navigation li {
+	display: none;
+	
+}
+.navigation li a {
+    color: var(--accent2-color);
+	display: block;
+	padding: 1rem;
+	text-align: center;
+	text-decoration: none;
+}
+
+.open li:first-of-type {
+	margin-top: 50px;
+}
+.open li {
+	display: block;
+	width: 100%;
+    grid-row: 1/3;
+	
+}
+.open li a {
+	display: block;
+    grid-row: 1/3;
+}
+
+.open img {
+	max-width: 100%;
+}
+#hero-box, .review {
+    max-width: 100%;
+    overflow: hidden;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+body {
+    background-color: var(--primary-background);
+    align-items: center;
+}
+p {
+    font-size: 1.5rem;
+    font-family: var(--paragraph-font);
+    color: var(--paragraph-color-on-color);
+    background-color: var(--accent1);
+    padding: 1rem;
+    margin: 0;
+}
+#hero-img {
+    width: 100%;
+}
+#content h1 , h4, .button-box {
+    font-size: 1.5rem;
+    font-family: var(--paragraph-font);
+    color: var(--paragraph-color-on-color);
+    background-color: var(--accent1);
+    padding: 1rem;
+    margin: 0;
+}
+
+#open {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    grid-gap: 10px;
+    margin: 0;
+    padding: 1rem;
+}
+#reviews {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#reviews h2 {
+    margin-bottom: 20px;
+}
+
+.review_1, .review_2, .review_3 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.review_1 img, .review_2 img, .review_3 img {
+    width: 80px;  /* Adjusted width */
+    height: 80px;  /* Adjusted height */
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+.review_1 p, .review_2 p, .review_3 p {
+    text-align: left;
+    margin: 0;
+    flex: 1;
+}
+footer {
+    background-color: var(--primary-background);
+    color: black;
+    font-family: var(--paragraph-font);
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+    #hero-box img, #open img, .review img {
+        width: 100%;
+        height: auto;
+    }
+    
+    #open img {
+        height: auto;
+        max-width: 100%;
+    }
+    
+    .review img {
+        height: auto;
+        max-width: 100%;
+    }
+}
+
+@media screen and (min-width: 900px) {#menu{
+    display: none;
+}
+
+nav{
+    grid-column: 3;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+}
+
+.navigation li {
+    display: block;
+    flex: 1 1 100%;
+}
+
+.navigation li button {
+    margin-top: 0;
+    margin-left: 15px;
+}
+.open li:first-of-type {
+    margin-top: 0px;
+}
+body {
+    background-color: var(--primary-background);
+}
+#content {
+    max-width: 1600px;
+    margin: 0 auto;
+ 
+    padding: 1rem;
+}
+
+#hero { 
+    display: grid;
+    grid-template-columns: 1fr 3fr 1 fr;
+    
+
+}
+#hero-msg .home-title {
+    grid-column: 2/3;
+    grid-row: 1/2
+
+}
+.home-title{ 
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+footer {
+    background-color: #1E90FF;
+    color: black;
+    font-family: Arial;
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+footer p a:hover {
+    text-decoration: underline;
+}
+footer p {
+    font-size: 1.1em;
+    font-family: Arial;
+    padding: 25px 50px
+}
+
+
+footer a:hover {
+    color: white;
+}
+footer a {
+    color: black;
+    text-decoration: none;
+}
+
+.social {
+    padding-top: 15px;
+}
+
+}

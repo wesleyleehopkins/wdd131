@@ -1,0 +1,31 @@
+/* if you are using any Google fonts change the font names below to your fonts. 
+Any spaces in your font name should be replaced with a +. 
+Fonts are separated by a | */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&family=Lato:wght@300;400;700&display=swap');
+
+:root {
+  /* Colors */
+  --primary-background: #a3c6d6;  /* Soft Blue */
+  --secondary-background: #f5f5f5;  /* Light Gray */
+  --accent1: #1c3d5a;  /* Deep Navy */
+  --accent2: #cae8fa;  /* Sky Blue */
+  /* Text Colors */
+  --headline-color-on-white: #1c3d5a;  /* headlines on a white background */ 
+  --headline-color-on-color: #ffffff; /* headlines on a colored background */ 
+  --paragraph-color-on-white: #708090; /* paragraph text on a white background */ 
+  --paragraph-color-on-color: white; /* paragraph text on a colored background */ 
+
+  /* Background Colors */
+  --paragraph-background-color: #a3c6d6;
+
+  /* Fonts */
+  --heading-font: 'Dancing Script', serif, sans-serif;
+  --paragraph-font: Lato, serif, sans-serif;
+
+  /* Navigation Colors */
+  --nav-link-color: #ffffff;
+  --nav-background-color: #1c3d5a;
+  --nav-hover-link-color: #cae8fa;
+  --nav-hover-background-color: #708090;
+}
+
