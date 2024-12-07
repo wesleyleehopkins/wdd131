@@ -7,6 +7,9 @@
     <title>wellnessmassage</title>
     <link rel="stylesheet" href="styles/style.css">
     <script src="scripts/hamburger.js" defer></script>
+    <script src="scripts/pricing.js" type="module"></script>
+    <script src="scripts/massage_type.mjs" type="module"></script>
+
 </head>
 
 <body>
@@ -42,16 +45,36 @@
                 </section>
             </main>
         </div>
+        <form class="sweedish_length ">
+            <select id="sweedishTime">
+                <option> Massage Length</option>
+                <option> 30 minute</option>
+                <option> 60 minute</option>
+                <option> 90 minute</option>
+                <option> 120 minute</option>
+
+            </select>
+        </form>
         <div id="sweedish">
             <img src="images/sweedish.jpg" alt="Sweedish Massage" height="300px" width="300px">
             <h2>Sweedish Massage</h2>
             <p>Our Sweedish massage is a relaxing full-body massage that uses long, flowing strokes to help you relax and
                 unwind. This massage is perfect for those looking to reduce stress, improve circulation, and promote overall
                 well-being.</p>
+
                 <div class="button-box">
                     <a class="book" href="services.html">Book Now</a>
                 </div>
         </div>
+        <form class="deepTissue_length ">
+            <select id="deepTissueTime" onclick="populate()">
+                <option> 30 minute</option>
+                <option> 60 minute</option>
+                <option> 90 minute</option>
+                <option> 120 minute</option>
+
+            </select>
+        </form>
         <div id="deep-tissue">
             <img src="images/deep tissue.jpg" alt="Deep Tissue Massage" height="300px">
             <h2>Deep Tissue Massage</h2>
@@ -68,6 +91,15 @@
             <p>Our hot stone massage is a luxurious massage that uses smooth, heated stones to help you relax and unwind.
                 This massage is perfect for those looking to melt away stress, improve circulation, and promote relaxation.
             </p>
+            <form class="hotstone_length ">
+                <select id="hotStoneTime" onclick="populate()">
+                    <option> 30 minute</option>
+                    <option> 60 minute</option>
+                    <option> 90 minute</option>
+                    <option> 120 minute</option>
+
+                </select>
+            </form>
                 <div class="button-box">
                     <a class="book" href ="services.html">Book Now</a>
                 </div>
@@ -78,6 +110,15 @@
             <p>Our prenatal massage is a gentle massage that is designed to help relieve the aches and pains associated with
                 pregnancy. This massage is perfect for expectant mothers looking to reduce stress, improve circulation, and
                 promote relaxation.</p>
+                <form class="prenatal_length ">
+                    <select id="prenatalTime" onclick="populate()">
+                        <option> 30 minute</option>
+                        <option> 60 minute</option>
+                        <option> 90 minute</option>
+                        <option> 120 minute</option>
+
+                    </select>
+                </form>
                 <div class="button-box">
                     <a class="book" href
         </div>
