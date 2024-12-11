@@ -4,13 +4,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>wellnessmassage</title>
+
+    <!-- Meta Description -->
+    <meta name="description" content="Select your preferred time duration for a Swedish massage or therapy session. Choose from 30, 60, 90, or 120 minutes to personalize your experience.">
+
+    <!-- Meta Keywords (Optional) -->
+    <meta name="keywords" content="Swedish massage, time selection, therapy duration, personalized massage, spa services, wellness, relaxation">
+
+    <!-- Open Graph Meta Tags for Social Sharing -->
+    <meta property="og:title" content="Select Your Ideal Swedish Massage Duration">
+    <meta property="og:description" content="Choose your preferred time for a Swedish massage session. Options include 30, 60, 90, or 120 minutes to suit your needs. Book your relaxation today!">
+    <meta property="og:image" content="URL_to_image.jpg"> <!-- Optional: Link to an image that represents the page -->
+    <meta property="og:url" content="https://www.yourwebsite.com/massage-duration">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Select Your Ideal Swedish Massage Duration">
+    <meta name="twitter:description" content="Choose the time duration for your Swedish massage. Pick from 30, 60, 90, or 120 minutes for the perfect relaxation experience.">
+    <meta name="twitter:image" content="URL_to_image.jpg"> <!-- Optional: Link to an image for Twitter -->
+
+    <title>Wellness Massage</title> <!-- Page Title for Browser Tab -->
+
     <link rel="stylesheet" href="styles/style.css">
     <script src="scripts/hamburger.js" defer></script>
     <script src="scripts/pricing.js" type="module"></script>
     <script src="scripts/massage_type.mjs" type="module"></script>
 
 </head>
+
 
 <body>
     <header>
@@ -32,42 +53,100 @@
         <div id="hero">
             <main>
                 <div id="hero-box">
-                    <img id="hero-img" src="images/sweedish.jpg" alt="Sweedish Massage">
+                    <img id="hero-img" src="images/heroimg.jpg" alt="Sweedish Massage">
                 </div>
                 <section id="hero-msg">
                     <h1 class="services">Services</h1>
-                    <p>Wellness Massage offers a variety of massage services to help you relax, rejuvenate, and recharge. Our
-                        team of professional massage therapists are dedicated to providing you with the best massage experience
-                        possible. Whether you are looking for a relaxing Swedish massage, a deep tissue massage to relieve
-                        muscle tension, or a hot stone massage to melt away stress, we have the perfect massage for you. We
-                        also offer a range of other massage services, including aromatherapy massage, reflexology, and prenatal
+                    <p>Wellness Massage offers a variety of massage services to help you relax, rejuvenate, and
+                        recharge. Our
+                        team of professional massage therapists are dedicated to providing you with the best massage
+                        experience
+                        possible. Whether you are looking for a relaxing Swedish massage, a deep tissue massage to
+                        relieve
+                        muscle tension, or a hot stone massage to melt away stress, we have the perfect massage for you.
+                        We
+                        also offer a range of other massage services, including aromatherapy massage, reflexology, and
+                        prenatal
                         massage. So come visit us today and experience the healing power of massage!</p>
                 </section>
             </main>
         </div>
-        <form class="sweedish_length ">
-            <select id="sweedishTime">
-                <option> Massage Length</option>
-                <option> 30 minute</option>
-                <option> 60 minute</option>
-                <option> 90 minute</option>
-                <option> 120 minute</option>
+        <h2>Sweedish Massage</h2>
+        <form class="sweedish_length">
+            <!-- Label for the select dropdown -->
+            <label for="sweedishTime">Select time duration:</label>
 
+            <!-- Select dropdown for choosing time duration -->
+            <select id="sweedishTime" name="time_duration">
+                <option value="30">30 minutes</option>
+                <option value="60">60 minutes</option>
+                <option value="90">90 minutes</option>
+                <option value="120">120 minutes</option>
             </select>
         </form>
         <div id="sweedish">
             <img src="images/sweedish.jpg" alt="Sweedish Massage" height="300px" width="300px">
-            <h2>Sweedish Massage</h2>
-            <p>Our Sweedish massage is a relaxing full-body massage that uses long, flowing strokes to help you relax and
-                unwind. This massage is perfect for those looking to reduce stress, improve circulation, and promote overall
+            <p>Our Sweedish massage is a relaxing full-body massage that uses long, flowing strokes to help you relax
+                and
+                unwind. This massage is perfect for those looking to reduce stress, improve circulation, and promote
+                overall
                 well-being.</p>
 
-                <div class="button-box">
-                    <a class="book" href="services.html">Book Now</a>
-                </div>
+            <div class="button-box">
+                <a class="book" href="services.html">Book Now</a>
+            </div>
         </div>
-        <form class="deepTissue_length ">
-            <select id="deepTissueTime" onclick="populate()">
+        <h2>Deep Tissue Massage</h2>
+        <form class="deepTissue_length">
+            <!-- Label for the select dropdown!-->
+            <label for="deepTissueTime">Select time duration:</label>
+
+            <select id="deepTissueTime">
+                <option> 30 minutes</option>
+                <option> 60 minutes</option>
+                <option> 90 minutes</option>
+                <option> 120 minutes</option>
+            </select>
+        </form>
+        <div id="deep-tissue">
+            <img src="images/deep_tissue.jpg" alt="Deep Tissue Massage" height="300px">
+            <p>Our deep tissue massage is a therapeutic massage that focuses on the deeper layers of muscle tissue. This
+                massage is perfect for those looking to relieve chronic muscle tension, improve flexibility, and reduce
+                pain.</p>
+            <div class="button-box">
+                <a class="book" href="services.html">Book Now</a>
+            </div>
+        </div>
+        <h2>Hot Stone Massage</h2>
+        <form class="hotstone_length">
+            <!-- Label for the select dropdown!-->
+            <label for="hotStoneTime">Select time duration:</label>
+
+            <select id="hotStoneTime">
+                <option> 30 minute</option>
+                <option> 60 minute</option>
+                <option> 90 minute</option>
+                <option> 120 minute</option>
+            </select>
+        </form>
+        <div id="hot-stone">
+            <img src="images/hot_stone.jpg" alt="Hot Stone Massage" height="300px">
+            <p>Our hot stone massage is a luxurious massage that uses smooth, heated stones to help you relax and
+                unwind.
+                This massage is perfect for those looking to melt away stress, improve circulation, and promote
+                relaxation.
+            </p>
+
+            <div class="button-box">
+                <a class="book" href="services.html">Book Now</a>
+            </div>
+        </div>
+        <h2>Prenatal Massage</h2>
+        <form class="prenatal_length">
+            <!-- Label for the select dropdown!-->
+            <label for="prenatalTime">Select time duration:</label>
+
+            <select id="prenatalTime">
                 <option> 30 minute</option>
                 <option> 60 minute</option>
                 <option> 90 minute</option>
@@ -75,70 +154,30 @@
 
             </select>
         </form>
-        <div id="deep-tissue">
-            <img src="images/deep tissue.jpg" alt="Deep Tissue Massage" height="300px">
-            <h2>Deep Tissue Massage</h2>
-            <p>Our deep tissue massage is a therapeutic massage that focuses on the deeper layers of muscle tissue. This
-                massage is perfect for those looking to relieve chronic muscle tension, improve flexibility, and reduce
-                pain.</p>
-                <div class="button-box">
-                    <a class="book" href="services.html">Book Now</a>
-                </div>
-        </div>
-        <div id="hot-stone">
-            <img src="images/hot_stone.jpg" alt="Hot Stone Massage" height="300px">
-            <h2>Hot Stone Massage</h2>
-            <p>Our hot stone massage is a luxurious massage that uses smooth, heated stones to help you relax and unwind.
-                This massage is perfect for those looking to melt away stress, improve circulation, and promote relaxation.
-            </p>
-            <form class="hotstone_length ">
-                <select id="hotStoneTime" onclick="populate()">
-                    <option> 30 minute</option>
-                    <option> 60 minute</option>
-                    <option> 90 minute</option>
-                    <option> 120 minute</option>
-
-                </select>
-            </form>
-                <div class="button-box">
-                    <a class="book" href ="services.html">Book Now</a>
-                </div>
-        </div>
         <div id="prenatal">
             <img src="images/prenatal.png" alt="Prenatal Massage" height="300px">
-            <h2>Prenatal Massage</h2>
-            <p>Our prenatal massage is a gentle massage that is designed to help relieve the aches and pains associated with
-                pregnancy. This massage is perfect for expectant mothers looking to reduce stress, improve circulation, and
+            <p>Our prenatal massage is a gentle massage that is designed to help relieve the aches and pains associated
+                with
+                pregnancy. This massage is perfect for expectant mothers looking to reduce stress, improve circulation,
+                and
                 promote relaxation.</p>
-                <form class="prenatal_length ">
-                    <select id="prenatalTime" onclick="populate()">
-                        <option> 30 minute</option>
-                        <option> 60 minute</option>
-                        <option> 90 minute</option>
-                        <option> 120 minute</option>
 
-                    </select>
-                </form>
-                <div class="button-box">
-                    <a class="book" href
-        </div>
-        <footer>
-            <p> Wellness Massage &copy; 2024 - Wesley Hopkins</p>
-            <p><a href="site-plan.html">Site Plan</a></p>
-            <p><a href="contact_us.html"></a>Contact Us</p>
-            <div class="social">
-                <a href="https://facebook.com" target="_blank">
-                    <img src="images/facebook.png" alt="fb icon">
-                </a>
-                <a href="https://twitter.com" target="_blank">
-                    <img src="images/twitter.png" alt="twitter icon">
-                </a>
-                <a href="https://instagram.com" target="_blank">
-                    <img src="images/instagram.png" alt="instagram icon">
-                </a>
+            <div class="button-box">
+                <footer>
+                    <p> Wellness Massage &copy; 2024 - Wesley Hopkins</p>
+                    <div class="social">
+                        <a href="https://facebook.com" target="_blank">
+                            <img src="images/facebook.png" alt="fb icon">
+                        </a>
+                        <a href="https://twitter.com" target="_blank">
+                            <img src="images/twitter.png" alt="twitter icon">
+                        </a>
+                        <a href="https://instagram.com" target="_blank">
+                            <img src="images/instagram.png" alt="instagram icon">
+                        </a>
+                    </div>
+                </footer>
             </div>
-        </footer>
-    </div>
 </body>
 
 </html>
