@@ -165,7 +165,7 @@ const massageTypes = [
         Duration: '120 Minutes',
         tags: ['Therapeutic', 'Relaxing', 'Hot Stone'],
         description: 'A 120-minute hot stone massage for a deeply soothing, muscle-relieving experience.',
-        image: './images/hot-stone.jpg',
+        image: 'images/hotstone_four.webp',
         rating: 10,
         price: 180
     }

@@ -305,6 +305,9 @@ footer {
     justify-content: space-around;
     align-items: center;
 }
+#hidden {
+    display: none;
+}
 .social a img {
     width: 100px;
     padding-top: 15px;
